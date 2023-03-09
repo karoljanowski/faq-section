@@ -43,6 +43,11 @@
     & &__sign {
         min-width: 22px;
         height: 22px;
+
+    }
+
+    & &__hide {
+        display: none;
     }
 
     & &__bold {
