@@ -19,7 +19,6 @@ export default function faq(element) {
           }
         })
         event.classList.add("faq__active");
-        console.log(event.children[0].children[1])
         event.children[0].children[1].classList.add('faq__hide')
         event.children[0].children[2].classList.remove('faq__hide')
         setHeight(event)
@@ -36,6 +35,6 @@ function close(element) {
   element.classList.remove("faq__active");
   element.children[1].style.height = 0
   element.children[0].children[1].src = '../public/images/plus.png'
-  element.children[0].children[2].classList.add('faq__hide')
   element.children[0].children[1].classList.remove('faq__hide')
+  element.children[0].children[2].classList.add('faq__hide')
 }
