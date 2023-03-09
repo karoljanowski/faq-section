@@ -1,0 +1,111 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+.faq {
+    margin: 1rem 0.75rem 1rem 1rem;
+
+    & &__title {
+        margin: 3rem auto 2rem;
+        text-align: center;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 120%;
+        max-width: 257px;
+    }
+
+    & &__questions {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    & &__question {
+        background-color: var(--color-bg1);
+        border-radius: 28px;
+        padding: 1.5rem 2rem;
+        line-height: 120%;
+        border: 1.5px solid var(--color-border);
+    }
+
+    & &__face {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: 600;
+
+    }
+
+    & &__que-title {
+        font-size: 1rem;
+        flex-grow: 1;
+    }
+
+    & &__sign {
+        min-width: 22px;
+        height: 22px;
+    }
+
+    & &__bold {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    & &__answer {
+        font-size: 0.875rem;
+        letter-spacing: -0.2px;
+        line-height: 155%;
+        height: 0;
+        margin-top: 0rem;
+        overflow: hidden;
+        transition: height 0.3s, margin-top 0.3s;
+        margin-bottom: -0.16rem;
+    }
+
+
+    & &__active {
+        transition: 0.3s;
+        background-color: #ff724715;
+        border-color: var(--color-orange);
+
+        .faq__answer {
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        & &__question {
+            padding-top: 1.875rem;
+            padding-bottom: 1.875rem;
+        }
+
+
+        & &__answer {
+            margin-bottom: -0.18rem;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        max-width: 772px;
+        margin-inline: auto;
+
+        & &__question {
+            padding: 2.125rem 2.5rem;
+        }
+
+        & &__title {
+            max-width: 336px;
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+        }
+
+        & &__que-title {
+            font-size: 1.125rem;
+        }
+
+        & &__answer {
+            font-size: 1rem;
+        }
+    }
+
+}
