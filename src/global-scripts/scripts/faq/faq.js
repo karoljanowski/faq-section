@@ -33,5 +33,5 @@ function setHeight(element) {
 function close(element) {
   element.classList.remove("faq__active");
   element.children[1].style.height = 0
-  element.children[0].children[1].src = '../../../public/images/plus.png'
+  element.children[0].children[1].src = 'public/images/plus.png'
 }
