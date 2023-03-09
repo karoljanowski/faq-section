@@ -19,7 +19,7 @@ export default function faq(element) {
           }
         })
         event.classList.add("faq__active");
-        event.children[0].children[1].src = './public/images/minus.png'
+        event.children[0].children[1].src = '../../public/images/minus.png'
         setHeight(event)
       }
     })
@@ -33,5 +33,5 @@ function setHeight(element) {
 function close(element) {
   element.classList.remove("faq__active");
   element.children[1].style.height = 0
-  element.children[0].children[1].src = './public/images/plus.png'
+  element.children[0].children[1].src = '../../../public/images/plus.png'
 }
