@@ -19,7 +19,7 @@ export default function faq(element) {
           }
         })
         event.classList.add("faq__active");
-        event.children[0].children[1].src = '../../public/images/minus.png'
+        event.children[0].children[1].src = '../../dist/public/images/minus.png'
         setHeight(event)
       }
     })
